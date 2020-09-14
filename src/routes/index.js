@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
 
-router.use('/champions', require('../api-routes/champions'));
+router.use('/champions', require('../controllers/champions'));
 
 module.exports = router;

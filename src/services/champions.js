@@ -20,7 +20,6 @@ const findAllChampions = async () => {
 }
 
 const createChampion = async (champion) => {
-    console.log('Holis desde servicio')
     const championData = new Champion({
         nombre: champion.nombre,
         precio: champion.precio,
@@ -38,7 +37,6 @@ const createChampion = async (champion) => {
 }
 
 const updateChampion = async (champion, id) => {
-  console.log('Holis desde servicio put')
   try {
       const editedChampion = await Champion.updateOne(
         { _id: id }, 

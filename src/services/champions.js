@@ -15,7 +15,7 @@ const findAllChampions = async () => {
     const champions = await Champion.find();
     return champions;
   } catch (e) {
-    throw new Error(e.message)
+    console.log(e);
   }
 }
 
